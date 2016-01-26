@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="game.libretro.rustation"
+		name="PlayStation (Rustation)"
+		version="0.0.1"
+		provider-name="Libretro">
+	<requires>
+		<import addon="game.libretro" version="1.0.0"/>
+		<import addon="game.controller.ps" version="1.0.0"/>
+	</requires>
+	<extension point="kodi.gameclient"
+                   library_android="libgame.libretro.rustation.so"
+                   library_linux="game.libretro.rustation.so"
+                   library_osx="game.libretro.rustation.dylib"
+                   library_windx="game.libretro.rustation.dll"
+                   library_wingl="game.libretro.rustation.dll">
+		<platforms>PSX</platforms>
+		<extensions>cue|toc|ccd|m3u</extensions>
+		<supports_vfs>false</supports_vfs>
+		<supports_no_game>false</supports_no_game>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Rustation PSX v0.0.1</summary>
+		<description>Rustation is a PlayStation module emulator written in rust.
+
+Supported files: .cue, .toc, .ccd, .m3u
+
+License: GPLv2</description>
+		<platform>all</platform>
+		<nofanart>true</nofanart>
+	</extension>
+</addon>

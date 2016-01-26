@@ -1,0 +1,1 @@
+rustation https://github.com/libretro/rustation-libretro master
